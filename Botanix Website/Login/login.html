@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Plant Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img id="logo" src="Group_3.png">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Signup</a></p>
+    </div>
+
+    <script src="script_login.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+        import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+    
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCxTiQtAjoAU9S4oX33j3kShsrF2-cW9_c",
+            authDomain: "botanix-ffac4.firebaseapp.com",
+            databaseURL: "https://botanix-ffac4-default-rtdb.firebaseio.com",
+            projectId: "botanix-ffac4",
+            storageBucket: "botanix-ffac4.appspot.com",
+            messagingSenderId: "575917186300",
+            appId: "1:575917186300:web:d1dc9d5eb76b8ea5850b79",
+            measurementId: "G-R24CFCMRMZ"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    
+        // Get a reference to the database service
+        const db = getDatabase(app);
+    
+        // Login form submission
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+    
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+    
+            // Check if the user exists in the "users" collection
+            const userRef = ref(db, 'users');
+            const snapshot = await get(userRef);
+    
+            if (snapshot.exists()) {
+                const users = snapshot.val();
+                const userFound = Object.values(users).find(user => user.email === email && user.password === password);
+    
+                if (userFound) {
+                    // User is authenticated, perform your login logic here
+                    alert('Login successful!');
+                    document.getElementById('loginForm').reset();
+                } else {
+                    alert('Invalid email or password');
+                }
+            } else {
+                alert('No users found in the database');
+            }
+        });
+    </script>    
+</body>
+
+</html>

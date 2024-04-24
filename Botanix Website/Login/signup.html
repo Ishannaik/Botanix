@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Plant Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <img id="logo" src="Group_3.png">
+        <h1>Signup</h1>
+        <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="submit" ahref="login.html">Signup</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+
+    <script src="script_signup.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+        import { getDatabase, ref, set, get } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js";
+    
+        // Paste the code from Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyCxTiQtAjoAU9S4oX33j3kShsrF2-cW9_c",
+            authDomain: "botanix-ffac4.firebaseapp.com",
+            databaseURL: "https://botanix-ffac4-default-rtdb.firebaseio.com",
+            projectId: "botanix-ffac4",
+            storageBucket: "botanix-ffac4.appspot.com",
+            messagingSenderId: "575917186300",
+            appId: "1:575917186300:web:d1dc9d5eb76b8ea5850b79",
+            measurementId: "G-R24CFCMRMZ"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    
+        // Get a reference to the database service
+        const db = getDatabase(app);
+    
+        document.getElementById('signupForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+    
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+    
+            // Check if the user exists in the "users" collection
+            const userRef = ref(db, 'users');
+            const snapshot = await get(userRef);
+    
+            if (snapshot.exists()) {
+                const users = snapshot.val();
+                const userFound = Object.values(users).find(user => user.email === email);
+    
+                if (userFound) {
+                    // User already exists
+                    alert('User already exists!!');
+                } else {
+                    // User does not exist, so add them to the database
+                    const newUserRef = ref(db, 'users/' + Math.random().toString(36).slice(2, 7));
+                    set(newUserRef, {
+                        name: document.getElementById('name').value,
+                        email: email,
+                        password: password
+                    });
+    
+                    alert('Registered successfully!!');
+                    document.getElementById('signupForm').reset();
+                }
+            } else {
+                alert('No users found in the database');
+            }
+        });
+    </script>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Botanix The Ayurveda App</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Botanix Ayurveda App" name="keywords">
+    <meta content="Explore the Botanix Ayurveda App for a holistic approach to wellness with natural remedies and herbal products. Our mission is to provide you with the best in Ayurvedic care, empowering you to live a healthier and happier life. Discover the healing power of Ayurveda and transform your well-being!"
+        name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="mb-0 text-primary text-uppercase"><img src="img/logo.png" alt="Botanix Ayurveda App Logo" width="20%"> Botanix The Ayurveda App</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#hero" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About Us</a>
+                <a href="#events" class="nav-item nav-link">Our Blog</a>
+                <a href="#magazine" class="nav-item nav-link">ML Model</a>
+                <a href="Login/login.html" class="nav-item nav-link">login</a>
+
+            </div>
+            <a href="#contact" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Chat bot<i
+                    class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <section id="hero">
+        <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s" >
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100" src="img/bg1.jpg" alt="Image">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                            <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                                <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">"स्वस्थस्य स्वास्थ्य रक्षणं, आतुरस्य विकार प्रशमनं च।"</h1>
+                                <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i
+                                        class="fa fa-map-marker-alt text-primary me-3"></i>AI&ML TCET , Mumbai : 400101</h4>
+                                <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i
+                                        class="fa fa-phone-alt text-primary me-3"></i>+91 88989 66670</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100" src="img/bg2.jpg" alt="Image">
+                        <div class carousel-caption d-flex align-items-center justify-content-center text-start>
+                            <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                                <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">INFORMATION AT YOUR FINGERTIPS</h1>
+                                <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i
+                                        class="fa fa-map-marker-alt text-primary me-3"></i>TCET , Mumbai : 400101</h4>
+                                <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i
+                                        class="fa fa-phone-alt text-primary me-3"></i>+91 9136836736</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel End -->
+
+<!-- About Start -->
+<section id="about">
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid w-75 align-self-end" src="img/bg3.png" alt="">
+                        <div class="w-50 bg-secondary p-5" style="margin-top: -25%;">
+                            <h1 class="text-uppercase text-primary mb-3">botanix</h1>
+                            <h2 class="text-uppercase mb-0">botanix</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block bg-secondary text-primary py-1 px-4">botanix</p>
+                    <h1 class="text-uppercase mb-4">WE ARE MORE THAN JUST An APP. Learn More About Us!</h1>
+                    <p>In the Aryuveda app botanix, you can explore a variety of features, including blogs, plant identification, a login system, and more. </p>
+                    <!-- <p class="mb-4"></p> -->
+                    <br>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase mb-3">OUR MISSION</h3>
+                            <p class="mb-0">botanix envisions to be a platform that helps the people to work on
+                                themselves in order to be physically, mentally, emotionally fit and also to rediscover
+                                themselves as a spiritual, skillful and happy individuals by learning from our BLOGS and identifying the plants</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase mb-3">OUR VISION</h3>
+                            <p class="mb-0">Creating and adding more features like real time plant detection and more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About End -->
+<!-- Events Start -->
+<section id="events">
+    <div id="events" class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">MEDICINAL PLANTS</p>
+                <h1 class="text-uppercase">Types of Medicinal Plants</h1>
+            </div>
+            <div class="row g-4">
+                <!-- Aloe Vera Section -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="ps-4">
+                            <div style="width: 100%; height: auto;">
+                                <img class="img-fluid" src="img/event1.webp" alt="Aloe Vera">
+                            </div>
+                            <br>
+                            <h3 class="text-uppercase mb-3">Aloe Vera</h3>
+                                <ul>
+                                    <li>Known for its soothing, skin healing properties</li>
+                                    <li>Used in burn treatment and cosmetic products</li>
+                                    <li>Contains antioxidants and antibacterial substances</li>
+                                    <li>Supports digestive health and relieves constipation</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Aloe Vera Section -->
+
+                <!-- Jasmine Section -->
+<!-- Mango Section -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+        <div class="ps-4">
+            <div style="width: 100%; height: auto;">
+                <img class="img-fluid" src="img/event2.webp" alt="Mango">
+            </div>
+            <br>
+            <h3 class="text-uppercase mb-3">Mango</h3>
+                <ul>
+                    <li>Rich in vitamins A, C, and E, plus beta-carotene</li>
+                    <li>Contains compounds with antioxidant properties</li>
+                    <li>May aid in maintaining overall heart health</li>
+                    <li>Helps in digestion due to its fiber content</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Mint Section -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+        <div class="ps-4">
+            <div style="width: 100%; height: auto;">
+                <img class="img-fluid" src="img/event3.jpg" alt="Mint">
+            </div>
+            <br>
+            <h3 class="text-uppercase mb-3">Mint</h3>
+                <ul>
+                    <li>Used to relieve indigestion and reduce stomach aches</li>
+                    <li>Has a cooling effect that can soothe sore muscles when applied topically</li>
+                    <li>Improves oral health and reduces bad breath</li>
+                    <li>May improve brain function and reduce symptoms of depression</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Neem Section -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+        <div class="ps-4">
+            <div style="width: 100%; height: auto;">
+                <img class="img-fluid" src="img/event4.jpg" alt="Neem">
+            </div>
+            <br>
+            <h3 class="text-uppercase mb-3">Neem</h3>
+                <ul>
+                    <li>Has antibacterial and anti-inflammatory effects</li>
+                    <li>Traditionally used to treat skin conditions like eczema and acne</li>
+                    <li>Supports dental health in products like toothpaste</li>
+                    <li>Used as a natural pesticide in organic farming</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Peepal Section -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+        <div class="ps-4">
+            <div style="width: 100%; height: auto;">
+                <img class="img-fluid" src="img/event5.jpg" alt="Peepal">
+            </div>
+            <br>
+            <h3 class="text-uppercase mb-3">Peepal</h3>
+                <ul>
+                    <li>Leaves are known for their wound-healing properties</li>
+                    <li>Considered useful in treating asthma and diabetes</li>
+                    <li>Has astringent properties, beneficial for skin health</li>
+                    <li>Bark and leaves are used in various Ayurvedic medicines</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Tulsi Section -->
+<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+        <div class="ps-4">
+            <div style="width: 100%; height: auto;">
+                <img class="img-fluid" src="img/event6.jpg" alt="Tulsi">
+            </div>
+            <br>
+            <h3 class="text-uppercase mb-3">Tulsi</h3>
+                <ul>
+                    <li>Adaptogen that helps the body manage stress</li>
+                    <li>Boosts the immune system with its antiviral properties</li>
+                    <li>May help in reducing blood pressure and cholesterol</li>
+                    <li>Often used in teas and supplements for its therapeutic effects</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!-- Magazine Start -->
+    <section id="magazine">
+        <div class="container-xxl py-5">
+            <div class="container">
+    
+                <div class="row g-0">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/194Kr5pdDvT23sricc9h-Q4DR5OkdhrYD/view?usp=sharing">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+    
+                                <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Our Latest Model</p>
+                                <h1 class="text-uppercase mb-4">Welcome to our Model ! </h1>
+    
+                                <ul style="color: rgb(235, 214, 214);">
+                                    <li>Medicinal Plant Identification</li>
+                                    <li>Identification of 10 Different Plant Types</li>
+                                    <li>Super-Fast Performance</li>
+                                    <li>High Accuracy</li>
+                                </ul>
+    
+                                <div>
+                                    <br>
+                                    <a href="https://online.pubhtml5.com/jttk/qkku/#p=1" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Click me to go to the Model</a>
+                                </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="h-100">
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/194Kr5pdDvT23sricc9h-Q4DR5OkdhrYD/view?usp=sharing">
+                        <img class="img-fluid h-100" src="img/magazinetemplate.png" alt=""></a>
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        </div>
+        </div>
+    </section>
+    <!-- Magazine End -->
+
+
+    <!-- Working Hours Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="img/open.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Working Hours</p>
+                        <h1 class="text-uppercase mb-4">Professional Barbers Are Waiting For You</h1>
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Monday</h6>
+                                <span class="text-uppercase">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Tuesday</h6>
+                                <span class="text-uppercase">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Wednesday</h6>
+                                <span class="text-uppercase">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Thursday</h6>
+                                <span class="text-uppercase">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Friday</h6>
+                                <span class="text-uppercase">09 AM - 09 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <h6 class="text-uppercase mb-0">Sat / Sun</h6>
+                                <span class="text-uppercase text-primary">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Working Hours End -->
+
+
+    <!-- Experience Start -->
+    <section id="experiance">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <p class="d-inline-block bg-secondary text-primary py-1 px-4">Experiences</p>
+                    <h1 class="text-uppercase">What Our Staff Say!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item text-center"
+                        data-dot="<img class='img-fluid' src='img/satyam.jpg' alt='' >">
+                        <h4 class="text-uppercase">Satyam Rudrakanthwar</h4>
+                        <p class="text-primary">TT - AI&ML</p>
+                        <span class="fs-5">As a member of the Botanix community, I had the opportunity to explore the informative Botanix blog, which proved to be an invaluable resource for our Aryuveda app development. The blog provided us with essential insights and knowledge about medicinal plants and their uses, enhancing our understanding and the functionality of the app. It played a crucial role in our journey, helping us create a more comprehensive and useful Aryuveda app.
+                        </span>
+                    </div>
+                    <div class="testimonial-item text-center"
+                        data-dot="<img class='img-fluid' src='img/kunal.jpg' alt=''>">
+                        <h4 class="text-uppercase">Kunal Pawar</h4>
+                        <p class="text-primary">TT-AI&ML</p>
+                        <span class="fs-5">Botanix has been an incredible ally in our quest to identify medicinal plants. The app's robust plant identification feature has been instrumental in our work. It accurately recognizes and categorizes various medicinal plants, providing detailed information about their properties and uses. This has significantly expedited our research and fieldwork, making the process of identifying and cataloging medicinal plants both efficient and reliable. Botanix has truly been a game-changer in our efforts to explore and harness the potential of these valuable resources.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Starts -->
+    <section id="contact">
+        <div id="contact" class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="bg-secondary p-5">
+                            <p class="d-inline-block bg-dark text-primary py-1 px-4">Chat Bot</p>
+                            <h1 class="text-uppercase mb-4">Have Any Query? Please Contact Us on our ChatBot!</h1>
+    
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-transparent" id="name"
+                                                placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control bg-transparent" id="email"
+                                                placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control bg-transparent" id="subject"
+                                                placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control bg-transparent" placeholder="Leave a message here"
+                                                id="message" style="height: 100px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="h-100" style="min-height: 400px;">
+                            <iframe class="google-map w-100 h-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.745722943928!2d72.87241691492012!3d19.20630535285456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e57647569d%3A0xc0aec329c82d3555!2sThakur%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1677901063659!5m2!1sen!2sin"
+                                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"
+                                style="filter: grayscale(10%) invert(92%) contrast(83%); border: 0;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact ends -->
+
+    <!-- Footer Start -->
+    <section id="footer">
+        <div id="footer" class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-uppercase mb-4">Get In Touch</h4>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="btn-square bg-dark flex-shrink-0 me-3">
+                                <span class="fa fa-map-marker-alt text-primary"></span>
+                            </div>
+                            <span>A-Block, Thakur Educational Campus,
+                                Shyamnarayan Thakur Marg,
+                                Thakur Village, Kandivali East,
+                                Mumbai, Maharashtra - 400101</span>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="btn-square bg-dark flex-shrink-0 me-3">
+                                <span class="fa fa-phone-alt text-primary"></span>
+                            </div>
+                            <span>+91 88989 66670</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="btn-square bg-dark flex-shrink-0 me-3">
+                                <span class="fa fa-envelope-open text-primary"></span>
+                            </div>
+                            <span>tcet.botanix@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-uppercase mb-4">Quick Links</h4>
+                        <a class="btn btn-link" href="#about">About Us</a>
+                        <a class="btn btn-link" href="#contact">Chat Bot</a>
+                        <a class="btn btn-link" href="#events">Our Blog</a>
+                        <!-- <a class="btn btn-link" href=""></a> -->
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h4 class="text-uppercase mb-4">Newsletter</h4>
+                        <div class="position-relative mb-4">
+                            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        </div>
+                        <div class="d-flex pt-1 m-n1">
+                            <a class="btn btn-lg-square btn-dark text-primary m-1" target="_blank"
+                                href="https://twitter.com/tcetmumbai?lang=en"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg-square btn-dark text-primary m-1" target="_blank"
+                                href="https://www.facebook.com/tcetmumbaiofficial/"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg-square btn-dark text-primary m-1" target="_blank"
+                                href="https://www.instagram.com/sort_tcet/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-lg-square btn-dark text-primary m-1" target="_blank"
+                                href="https://www.linkedin.com/company/sort-tcet/?originalSubdomain=in"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">BotaniX</a>, All Right Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            Designed By <a class="border-bottom" href="https://github.com/ishannaik ">Ishan Naik</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

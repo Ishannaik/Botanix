@@ -1,0 +1,10 @@
+0 Aloevera - ઘૃતકુમાર (Ghritakumār)
+1 Jamun - જાંબુ (Jāmbu)
+2 Jasmine - મોગરો (Mogaro)
+3 Mango - કેરી (Kerī)
+4 Mint - પુદીનો (Pudīnō)
+5 Neem - લીમડો (Līmaḍō)
+6 Peepal - પીપળ (Pīpaḷ)
+7 Tulsi - તુલસી (Tulasi)
+
+
